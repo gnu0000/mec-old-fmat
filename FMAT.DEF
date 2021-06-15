@@ -1,0 +1,6 @@
+NAME	         fmat   WINDOWCOMPAT
+DESCRIPTION 'fmat, Copyright (C) 1990, Info Tech, Inc. All rights reserved'
+PROTMODE
+HEAPSIZE 8000
+STACKSIZE 32000
+

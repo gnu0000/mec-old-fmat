@@ -1,0 +1,201 @@
+Order,Entity Name,Attribute name,Storage Class,C Variable Name,HighEst Kind,HighEst Label,Description,Display Size,Format,,Attribute name
+,Assembly Item List Catalog,Reference-Count,Number,szRefCount,ASMIND_KIND,,,,,,Reserved
+,Assembly Item List Catalog,Assembly-Item-List,Link,hAssemblyItemList,ASMIND_KIND,,,,,,
+,Average Price,Quantity-Level,Number,szQLevel,BIDAVERAGE_KIND,AVEQUANTITYLEVEL,,6,S,,
+,Average Price,Work-Type,String,szWorkType,BIDAVERAGE_KIND,AVEWORKTYPE,,7,K,,
+,Average Price,Area,String,szArea,BIDAVERAGE_KIND,AVEAREA,,3,Z,,
+,Average Price,Price,Number,szPrice,BIDAVERAGE_KIND,AVEPRICE,,11,"N$,..",,
+,Bid Hist Avg List,Reserved,,,BIDAVERAGE_KIND,AVEQUANTITYLEVEL,Reserved,,S,,
+,Bid Hist Avg List,Reserved,,,BIDAVERAGE_KIND,AVEWORKTYPE,Reserved,,K,,
+,Bid Hist Avg List,Reserved,,,BIDAVERAGE_KIND,AVEAREA,Reserved,,Z,,
+,Bid Hist Avg List,Reserved,,,BIDAVERAGE_KIND,AVEPRICE,Reserved,,"N$,..",,
+,Bid History,Item-Number,String,szItemNumber,BIDHISTORY_KIND,BIDITEM,,9,S,,
+,Bid History,5th-Percentile,Number,szPercent5,BIDHISTORY_KIND,BIDPERCENT5,,9,"N,.",,
+,Bid History,25th-Percentile,Number,szPercent25,BIDHISTORY_KIND,BIDPERCENT25,,9,"N,.",,
+,Bid History,50th-Percentile,Number,szPercent50,BIDHISTORY_KIND,BIDPERCENT50,,9,"N,.",,
+,Bid History,75th-Percentile,Number,szPercent75,BIDHISTORY_KIND,BIDPERCENT75,,9,"N,.",,
+,Bid History,95th-Percentile,Number,szPercent95,BIDHISTORY_KIND,BIDPERCENT95,,9,"N,."
+,Bid History,Price,Number,szPrice,BIDHISTORY_KIND,BIDPRICE,,9,"N$,.."
+,Bid History,Average-Prices,Link,hAverages,BIDHISTORY_KIND,BIDAVERAGE_LINK,,,
+,Bid History,Regression-Coefficients,Link,hRegCoefs,BIDHISTORY_KIND,BIDREGRESSION_LINK,,,
+,Bid History Catalog,Reference-Count,Number,szRefCount,BIDIND_KIND,,,,
+,Bid History Catalog,Bid-History,Link,hBidHistory,BIDIND_KIND,,,,
+,Bid Reg Coef List,Reserved,,,BIDREGRESS_KIND,REGCOEFTYPE,Reserved,,F
+,Bid Reg Coef List,Reserved,,,BIDREGRESS_KIND,REGCOEFINDEX,Reserved,,K
+,Bid Reg Coef List,Reserved,,,BIDREGRESS_KIND,REGCOEFVALUE,Reserved,,"N,...."
+,Cost Sheet,Labor-Cost,Number,szLaborCost,COSTSHEET_KIND,CLABOR,The cost of the labor per day,12,"N$,.."
+,Cost Sheet,Equipment-Cost,Number,szEquipmentCost,COSTSHEET_KIND,CEQUIPMENT,The cost of the equipment per day,12,"N$,.."
+,Cost Sheet,Materials-Cost,Number,szMaterialsCost,COSTSHEET_KIND,CMATERIALS,The cost of the materials per day,12,"N$,.."
+,Cost Sheet,Cost-Sheet-Name,String,szName,COSTSHEET_KIND,CNAME,The name of the cost sheet,67,sn
+,Cost Sheet,Cost-Sheet-Description,String,szDescription,COSTSHEET_KIND,CDESCIPTION,The description of the asumptions made in this cost sheet,120,m
+,Cost Sheet,Production-Rate,Number,szProductionRate,COSTSHEET_KIND,CPRODUCTIONRATE,,14,"N,...."
+,Cost Sheet,Production-Adjustment,Number,szProductionAdjustment,COSTSHEET_KIND,CPRODUCTIONADJ,,5,n%.
+,Cost Sheet,Production,Number,szProduction,COSTSHEET_KIND,CPRODUCTION,,13,"n,...."
+,Cost Sheet,Total-Cost,Number,szTotalCost,COSTSHEET_KIND,CTOTAL_COST,,13,"N$,.."
+,Cost Sheet,Profit,Number,szProfit,COSTSHEET_KIND,CPROFFIT,,13,"N$,.."
+,Cost Sheet,Total-Price,Number,szTotalPrice,COSTSHEET_KIND,CTOTAL_PRICE,,13,"N$,.."
+,Cost Sheet,Profit-Percent,Number,szProfitPercent,COSTSHEET_KIND,CPROFFITPERCENT,,5,n%.
+,Cost Sheet,Labor-Overhead,Number,szLaborOver,COSTSHEET_KIND,CLABOROVER,,5,n%.
+,Cost Sheet,Equipment-Overhead,Number,szEquipmentOver,COSTSHEET_KIND,CEQUIPMENTOVER,,5,n%.
+,Cost Sheet,Materials-Overhead,Number,szMaterialsOver,COSTSHEET_KIND,CMATERIALSOVER,,5,n%.
+,Cost Sheet,Labor-Per-Unit,Number,szLaborPerUnit,COSTSHEET_KIND,CLABORDOLARSUNIT,,12,"N$,.."
+,Cost Sheet,Equipment-Per-Unit,Number,szEquipmentPerUnit,COSTSHEET_KIND,CEQUIPMENTDOLARSUNIT,,12,"N$,.."
+,Cost Sheet,Materials-Per-Unit,Number,szMaterialsPerUnit,COSTSHEET_KIND,CMATERIALSDOLARSUNIT,,,"N$,.."
+,Cost Sheet,Labor-Total,Number,szLaborTotal,COSTSHEET_KIND,CLABORDOLARSTOTAL,,12,"N$,.."
+,Cost Sheet,Equipment-Total,Number,szEquipmentTotal,COSTSHEET_KIND,CEQUIPMENTDOLARSTOTAL,,12,"N$,.."
+,Cost Sheet,Materials-Total,Number,szMaterialsTotal,COSTSHEET_KIND,CMATERIALSDOLARSTOTAL,,12,"N$,.."
+,Cost Sheet,Labor-Link,Link,hLabor,COSTSHEET_KIND,LABOR_LINK,,,
+,Cost Sheet,Equipment-Link,Link,hEquipment,COSTSHEET_KIND,EQUIPMENT_LINK,,,
+,Cost Sheet,Materials-Link,Link,hMaterials,COSTSHEET_KIND,MATERIALS_LINK,,,
+,Cost Sheet Catalog,Reference-Count,Number,szRefCount,COSTIND_KIND,,,,
+,Cost Sheet Catalog,Cost-Sheet,Link,hCostSheet,COSTIND_KIND,,,,
+,Equipment,Total-Cost,Number,szTotal,EQUIPMENT_KIND,ETOTALCOST,,10,"N$,.."
+,Equipment,Laborer,String,szEquipment,EQUIPMENT_KIND,EEQUIPMENT,,19,S
+,Equipment,Units-Per-Day,Number,szUnitsPerDay,EQUIPMENT_KIND,EUNITSPERDAY,,7,n..
+,Equipment,Quantity,Number,szQuantity,EQUIPMENT_KIND,EQUANTITY,,2,n
+,Equipment,Rate,Number,szRate,EQUIPMENT_KIND,ERATE,,10,"N$,.."
+,Equipment,Units,String,szUnits,EQUIPMENT_KIND,EUNITS,,4,C
+,Equipment,Code,String,szCode,EQUIPMENT_KIND,ECODE,,5,S
+,Equipment List,List-Total,Number,szListTotal,EQUIPMENT_KIND,ETOTALCOST,List-Total,,"N$,.."
+,Equipment List,Reserved,,,EQUIPMENT_KIND,EEQUIPMENT,Reserved,,S
+,Equipment List,Reserved,,,EQUIPMENT_KIND,EUNITSPERDAY,Reserved,,n..
+,Equipment List,Infinity-Count,Number,szNumInfinity,EQUIPMENT_KIND,EQUANTITY,Infinity-Count,,n
+,Equipment List,Reserved,,,EQUIPMENT_KIND,ERATE,Reserved,,"N$,.."
+,Equipment List,Reserved,,,EQUIPMENT_KIND,EUNITS,Reserved,,C
+,Equipment List,Reserved,,,EQUIPMENT_KIND,ECODE,Reserved,,S
+,Equipment Rate,Code,String,szCode,EQUIPCAT_KIND,EQUIPCAT_CODE,,5,C
+,Equipment Rate,Equipment,String,szEquipment,EQUIPCAT_KIND,EQUIPCAT_EQUIP,,23,s
+,Equipment Rate,Units,String,szUnits,EQUIPCAT_KIND,EQUIPCAT_UNITS,,4,c
+,Equipment Rate,Rate,Number,szRate,EQUIPCAT_KIND,EQUIPCAT_RATE,,10,"n$,.."
+,Equipment Rate,Units-Per-Day,Number,szUnitsPerDay,EQUIPCAT_KIND,EQUIPCAT_UNITSPERDAY,,9,n..
+,Equipment Rate Catalog,Reserved,,,EQUIPCAT_KIND,EQUIPCAT_CODE,Reserved,,C
+,Equipment Rate Catalog,Reserved,,,EQUIPCAT_KIND,EQUIPCAT_EQUIP,Reserved,,s
+,Equipment Rate Catalog,Reserved,,,EQUIPCAT_KIND,EQUIPCAT_UNITS,Reserved,,c
+,Equipment Rate Catalog,Reserved,,,EQUIPCAT_KIND,EQUIPCAT_RATE,Reserved,,"n$,.."
+,Equipment Rate Catalog,Reserved,,,EQUIPCAT_KIND,EQUIPCAT_UNITSPERDAY,Reserved,,n..
+,Item,Extended-Amount,Number,szCost,ITEMLIST_KIND,PCOST,The price of one unit of the item.,16,n$
+,Item,Item-Code,String,szItemCode,ITEMLIST_KIND,PITEM,The code of the item.,12,Sn
+,Item,Item-Description,String,szDescription,ITEMLIST_KIND,PDESCRIPTION,The description of the item,49,S
+,Item,Item-Units,String,szUnits,ITEMLIST_KIND,PUNITS,The units of the item,4,C
+,Item,Item-Quantity,Number,szQuantity,ITEMLIST_KIND,PQUANTITY,The number of the item needed.,16,"n,...."
+,Item,Extended-Amount,Number,szExtendedAmount,ITEMLIST_KIND,PTOTAL,The total of the quantity times the unit price,16,"N$,.."
+,Item,Active-Price-Basis,Link,hActivePriceBasis,ITEMLIST_KIND,ACTIVE_PR_BAS_LINK,A handle to the active price basis.  Null if the active price basis is an ad-hoc price.,,
+,Item,Cost-Sheets,Link,hCostSheets,ITEMLIST_KIND,COSTSHEET_LINK,A handle to an indirect link containing handles to cost sheets.,,
+,Item,Bid-Histories,Link,hBidHistories,ITEMLIST_KIND,BIDHISTORY_LINK,A handle to an indirect link containing handles to bid histories.,,
+,Item,Ref-Prices,Link,hRefPrices,ITEMLIST_KIND,REFERENCEPRICE_LINK,A handle to an indirect link containing handles to reference prices.,,
+,Item,Asm-Item-Lists,Link,hAsmItemLists,ITEMLIST_KIND,ASSEMBLY_ITEM_LINK,A handle to an indirect link containing handles to assembly item lists.,,
+,Item List,Reserved,,,ITEMLIST_KIND,PCOST,Reserved,,n$
+,Item List,Reserved,,,ITEMLIST_KIND,PITEM,Reserved,,Sn
+,Item List,Flags,String,szFlags,ITEMLIST_KIND,PDESCRIPTION,"Used to denote Assembly Alternate, assembly item list",,S
+,Item List,Reserved,,,ITEMLIST_KIND,PUNITS,Reserved,,C
+,Item List,Infinity-Count,Number,szNumInfinities,ITEMLIST_KIND,PQUANTITY,Infinity-Count,,"n,...."
+,Item List,List-Total,Number,szListTotal,ITEMLIST_KIND,PTOTAL,List-Total,,"N$,.."
+,Item List,Reserved,Link,,ITEMLIST_KIND,ACTIVE_PR_BAS_LINK,Reserved,,
+,Item List,Reserved,Link,,ITEMLIST_KIND,COSTSHEET_LINK,Reserved,,
+,Item List,Reserved,Link,,ITEMLIST_KIND,BIDHISTORY_LINK,Reserved,,
+,Item List,Reserved,Link,,ITEMLIST_KIND,REFERENCEPRICE_LINK,Reserved,,
+,Item List,Reserved,Link,,ITEMLIST_KIND,ASSEMBLY_ITEM_LINK,Reserved,,
+,Labor List,List-Total,Number,szListTotal,LABOR_KIND,LTOTALCOST,List-Total,,"N$,.."
+,Labor List,Reserved,,,LABOR_KIND,LLABORER,Reserved,,S
+,Labor List,Reserved,,,LABOR_KIND,LUNITSPERDAY,Reserved,,n..
+,Labor List,Infinity-Count,Number,szNumInfinities,LABOR_KIND,LQUANTITY,Infinity-Count,,n
+,Labor List,Reserved,,,LABOR_KIND,LRATE,Reserved,,"N$,.."
+,Labor List,Reserved,,,LABOR_KIND,LUNITS,Reserved,,C
+,Labor List,Reserved,,,LABOR_KIND,LCODE,Reserved,,S
+,Labor Rate,Code,String,szCode,LABCAT_KIND,LABCAT_CODE,,5,C
+,Labor Rate,Laborer,String,szLaborer,LABCAT_KIND,LABCAT_LABORER,,23,s
+,Labor Rate,Units,String,szUnits,LABCAT_KIND,LABCAT_UNITS,,4,c
+,Labor Rate,Rate,Number,szRate,LABCAT_KIND,LABCAT_RATE,,10,"n$,.."
+,Labor Rate,Units-Per-Day,Number,szUnitsPerDay,LABCAT_KIND,LABCAT_UNITSPERDAY,,9,n..
+,Labor Rate Catalog,Reserved,,,LABCAT_KIND,LABCAT_CODE,Reserved,5,C
+,Labor Rate Catalog,Reserved,,,LABCAT_KIND,LABCAT_LABORER,Reserved,23,s
+,Labor Rate Catalog,Reserved,,,LABCAT_KIND,LABCAT_UNITS,Reserved,4,c
+,Labor Rate Catalog,Reserved,,,LABCAT_KIND,LABCAT_RATE,Reserved,10,"n$,.."
+,Labor Rate Catalog,Reserved,,,LABCAT_KIND,LABCAT_UNITSPERDAY,Reserved,9,n..
+,Laborer,Total-Cost,Number,szTotal,LABOR_KIND,LTOTALCOST,,10,"N$,.."
+,Laborer,Laborer,String,szLaborer,LABOR_KIND,LLABORER,,19,S
+,Laborer,Units-Per-Day,Number,szUnitsPerDay,LABOR_KIND,LUNITSPERDAY,,7,n..
+,Laborer,Quantity,Number,szQuantity,LABOR_KIND,LQUANTITY,,2,n
+,Laborer,Rate,Number,szRate,LABOR_KIND,LRATE,,10,"N$,.."
+,Laborer,Units,String,szUnits,LABOR_KIND,LUNITS,,4,C
+,Laborer,Code,String,szCode,LABOR_KIND,LCODE,,5,S
+,Material,Total-Cost,Number,szTotal,MATERIALS_KIND,MTOTALCOST,,10,"N$,.."
+,Material,Laborer,String,szMaterial,MATERIALS_KIND,MMATERIALS,,19,S
+,Material,Reserved,,,MATERIALS_KIND,MUNITSPERDAY,Reserved,,s
+,Material,Quantity,Number,szQuantity,MATERIALS_KIND,MQUANTITY,,11,"n,...."
+,Material,Rate,Number,szRate,MATERIALS_KIND,MRATE,,10,"N,...."
+,Material,Units,String,szUnits,MATERIALS_KIND,MUNITS,,3,C
+,Material,Code,String,szCode,MATERIALS_KIND,MCODE,,5,S
+,Material Price,Code,String,szCode,MATLCAT_KIND,MATLCAT_CODE,,5,C
+,Material Price,Material,String,szMaterial,MATLCAT_KIND,MATLCAT_MATL,,23,s
+,Material Price,Units,String,szUnits,MATLCAT_KIND,MATLCAT_UNITS,,4,c
+,Material Price,Price,Number,szPrice,MATLCAT_KIND,MATLCAT_RATE,,10,"n$,.."
+,Material Price Catalog,Reserved,,,MATLCAT_KIND,MATLCAT_CODE,Reserved,5,C
+,Material Price Catalog,Reserved,,,MATLCAT_KIND,MATLCAT_MATL,Reserved,23,s
+,Material Price Catalog,Reserved,,,MATLCAT_KIND,MATLCAT_UNITS,Reserved,4,c
+,Material Price Catalog,Reserved,,,MATLCAT_KIND,MATLCAT_RATE,Reserved,10,"n$,.."
+,Materials List,List-Total,Number,szListTotal,MATERIALS_KIND,MTOTALCOST,List-Total,,"N$,.."
+,Materials List,Reserved,,,MATERIALS_KIND,MMATERIALS,Reserved,,S
+,Materials List,Reserved,,,MATERIALS_KIND,MUNITSPERDAY,Reserved,,s
+,Materials List,Infinity-Count,Number,szNumInfinities,MATERIALS_KIND,MQUANTITY,Infinity-Count,,"n,...."
+,Materials List,Reserved,,,MATERIALS_KIND,MRATE,Reserved,,"N,...."
+,Materials List,Reserved,,,MATERIALS_KIND,MUNITS,Reserved,,C
+,Materials List,Reserved,,,MATERIALS_KIND,MCODE,Reserved,,S
+,Project Header,Approved-by,String,szApprovedBy,HEADER_KIND,APPROVED_BY,Name of the person who approved this estimate.,14,s
+,Project Header,Checked-by,String,szCheckedBy,HEADER_KIND,CHECKED_BY,Name of the person who checked this estimate.,14,s
+,Project Header,Estimate-Date,Date,szEstimateDate,HEADER_KIND,CONTRACT_DATE,Date the estimate was prepared,25,d
+,Project Header,Contract-Number,String,szContractNumber,HEADER_KIND,CONTRACT_NUM,The number used by the state to reference the contract containing this project.,14,s
+,Project Header,County,List,szCounty,HEADER_KIND,COUNTY,The primary county containing this item.,59,ln
+,Project Header,Date-Approved,Date,szDateApproved,HEADER_KIND,DATE_APPROVED,The date this estimate was approved (by Approved-by).,25,d
+,Project Header,Date-Checked,Date,szDateChecked,HEADER_KIND,DATE_CHECKED,The date the completed estimate was checked for correctness.,25,d
+,Project Header,Date-of-Letting,Date,szDateOfLetting,HEADER_KIND,DATE_OF_LETTING,The date the contract is to be let for bidding.,25,dn
+,Project Header,District,String,szDistrict,HEADER_KIND,DISTRICT,The district is the main work district of the county.,25,S
+,Project Header,Estimator,String,szEstimator,HEADER_KIND,ESTIMATOR,The name of the persone who produced the estimate.,59,s
+,Project Header,File-Name,String,szFileName,HEADER_KIND,FILE_NAME,This field is used by HighEst to store the complete file name of the estimate (including path).  This field is updated after every File Save As or File Load command,,C
+,Project Header,Header-Total-Link,Link,hItemList,HEADER_KIND,HEADER_TOTAL_LINK,This is a link to the project item list that the Total-Cost is attached to.,,
+,Project Header,Project-Name,String,szProjectName,HEADER_KIND,PROJECT_NAME,"A short, descriptive name for the project being estimated",59,s
+,Project Header,Project-User-List,Link,hUserList,HEADER_KIND,SECURITY_LINK,This is a handle to the project's user list.,,
+,Project Header,Total-Cost,Number,szTotalCost,HEADER_KIND,TOTAL_COST,This field is the estimated total cost of the project.,59,"N$,.."
+,Project Header,Work-Type,String,szWorkType,HEADER_KIND,WORKTYPE,The main type of work that the project entails.,14,kn
+,Project User,User-Name,String,szUserName,SECURITY_KIND,USER_NAME,,8,Sn
+,Project User,Permissions,String,szPermissions,SECURITY_KIND,USER_PERMS,,10,pn
+,Project User List,Reserved,,,SECURITY_KIND,USER_NAME,Reserved,,Sn
+,Project User List,Reserved,,,SECURITY_KIND,USER_PERMS,Reserved,,pn
+,Reference Price,Price,Number,szPrice,REFPRICE_KIND,REFPRICE_PRICE,,9,"n$,.."
+,Reference Price,Name,String,szName,REFPRICE_KIND,REFPRICE_NAME,,19,s
+,Reference Price,Description,String,szDescription,REFPRICE_KIND,REFPRICE_DESCRIPTION,,47,m
+,Reference Price Catalog,Reference-Count,Number,szRefCount,REFIND_KIND,,,,
+,Reference Price Catalog,Reference-Price,Link,hRefPrice,REFIND_KIND,,,,
+,Reg Coefficient,Coef-Type,String,szCoefType,BIDREGRESS_KIND,REGCOEFTYPE,,9,F
+,Reg Coefficient,Coef-Index,String,szCoefIndex,BIDREGRESS_KIND,REGCOEFINDEX,,5,K
+,Reg Coefficient,Coef-Value,Number,szCoefValue,BIDREGRESS_KIND,REGCOEFVALUE,,12,"N,...."
+,Standard Item,Description,String,szDescription,ITEMCAT_KIND,ITEM_CAT_TITLE,,29,s
+,Standard Item,Units,String,szUnits,ITEMCAT_KIND,ITEM_CAT_UNITS,,4,c
+,Standard Item,Item-Number,String,szItemNumber,ITEMCAT_KIND,ITEM_CAT_ITEMNUM,,12,S
+,Standard Item,Reserved,Link,,ITEMCAT_KIND,ITEM_CAT_ACTIVE_PR_BAS_LINK,Reserved,,
+,Standard Item,Cost-Sheets,Link,hCostSheets,ITEMCAT_KIND,ITEM_CAT_COSTSHEET_LINK,,,
+,Standard Item,Bid-Histories,Link,hBidHistories,ITEMCAT_KIND,ITEM_CAT_BIDHISTORY_LINK,,,
+,Standard Item,Reference-Prices,Link,hReferencePrices,ITEMCAT_KIND,ITEM_CAT_REFERENCEPRICE_LINK,,,
+,Standard Item,Assembly-Item-Lists,Link,hAssemblyItemLists,ITEMCAT_KIND,ITEM_CAT_ASSEMBLY_ITEM_LINK,,,
+,Standard Item Catalog,Reserved,,,ITEMCAT_KIND,ITEM_CAT_TITLE,Reserved,,s
+,Standard Item Catalog,Reserved,,,ITEMCAT_KIND,ITEM_CAT_UNITS,Reserved,,c
+,Standard Item Catalog,Reserved,,,ITEMCAT_KIND,ITEM_CAT_ITEMNUM,Reserved,,S
+,Standard Item Catalog,Reserved,Link,,ITEMCAT_KIND,ITEM_CAT_ACTIVE_PR_BAS_LINK,Reserved,,
+,Standard Item Catalog,Reserved,Link,hCostSheets,ITEMCAT_KIND,ITEM_CAT_COSTSHEET_LINK,Reserved,,
+,Standard Item Catalog,Reserved,Link,hBidHistories,ITEMCAT_KIND,ITEM_CAT_BIDHISTORY_LINK,Reserved,,
+,Standard Item Catalog,Reserved,Link,hReferencePrices,ITEMCAT_KIND,ITEM_CAT_REFERENCEPRICE_LINK,Reserved,,
+,Standard Item Catalog,Reserved,Link,hAssemblyItemLists,ITEMCAT_KIND,ITEM_CAT_ASSEMBLY_ITEM_LINK,Reserved,,
+,User,User-Name,String,szUserName,USERCAT_KIND,USER_NAME,,8,Sn
+,User,Permissions,String,szPermissions,USERCAT_KIND,USER_PERMS,,,s
+,User,Real-Name,String,szRealName,USERCAT_KIND,USER_REALNAME,,24,s
+,User,Password,String,szPassword,USERCAT_KIND,USER_PASSWORD,,,Wn
+,User,Phone-Number,String,szPhoneNumber,USERCAT_KIND,USER_PHONENUMBER,,18,s
+,User,Department,String,szDepartment,USERCAT_KIND,USER_DEPARTMENT,,10,s
+,User,Preferences,String,szPreferences,USERCAT_KIND,USER_PREFERENCES,,,s
+,User Catalog,Reserved,,,USERCAT_KIND,USER_NAME,Reserved,,Sn
+,User Catalog,Reserved,,,USERCAT_KIND,USER_PERMS,Reserved,,s
+,User Catalog,Reserved,,,USERCAT_KIND,USER_REALNAME,Reserved,,s
+,User Catalog,Reserved,,,USERCAT_KIND,USER_PASSWORD,Reserved,,Wn
+,User Catalog,Reserved,,,USERCAT_KIND,USER_PHONENUMBER,Reserved,,s
+,User Catalog,Reserved,,,USERCAT_KIND,USER_DEPARTMENT,Reserved,,s
+,User Catalog,Reserved,,,USERCAT_KIND,USER_PREFERENCES,Reserved,,s

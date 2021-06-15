@@ -1,0 +1,2 @@
+fmat.exe : fmat.c csv.c
+   cl /W3 /F 5000 /Ol fmat.c csv.c
